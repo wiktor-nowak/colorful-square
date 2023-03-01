@@ -1,6 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +15,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.displayBox {
+  box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  border: 3px solid rgb(22, 21, 21);
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.inputField {
+  box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 10px 10px 12px -10px rgba(0, 0, 0, 0.7);
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 400px;
+  height: 2rem;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -999999px;
 }
